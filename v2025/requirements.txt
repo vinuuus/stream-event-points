@@ -1,0 +1,5 @@
+keyboard == 0.13.5
+patreon == 0.5.0
+Pillow == 9.4.0
+requests == 2.28.1
+supabase == 2.10.0

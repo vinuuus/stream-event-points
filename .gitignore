@@ -1,2 +1,4 @@
-src/sep.config
 tests
+v2024/point-grid-v1/src/client_key.json
+v2024/point-calc-v2/src/point-calc.config
+v2025/src/sep.config

@@ -209,7 +209,7 @@ def add_twitch_views_logs() -> None:
     oauth_request_payload: dict = {'client_id': twitch_api_client_id, 'client_secret': twitch_api_client_secret, 'grant_type': 'client_credentials'}
     oauth_token: str = requests.post(url = twitch_api_oauth_request_url, data = oauth_request_payload).json()["access_token"]
 
-    stream_request_params: dict = {'user_login':'lakavelive'}
+    stream_request_params: dict = {'user_login':'TWITCH USERNAME'}, #REPLACE BY YOUR TWITCH USERNAME
     stream_request_headers: dict = {'Client-Id':twitch_api_client_id, 'Authorization':'Bearer '+oauth_token}
     stream_response = requests.get(url = twitch_api_streams_request_url, params = stream_request_params, headers = stream_request_headers)
 

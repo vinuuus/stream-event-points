@@ -144,7 +144,7 @@ def get_view_amount():
 
         stream_response = requests.get(
             request_twitch_stream_url,
-            params={'user_login':'lakavelive'},
+            params={'user_login':'TWITCH USERNAME'}, #REPLACE BY YOUR TWITCH USERNAME
             headers={'Client-Id':request_client_id, 'Authorization':'Bearer '+bearer_token}
         )
 
